@@ -1,11 +1,11 @@
 from typing import Mapping
 from flask import Flask
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def index():
     return "Hello World"
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
